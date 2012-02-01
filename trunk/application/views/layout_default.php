@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh">
 	<head>
-		<meta charset="utf-8">
-        <title>OST排課系統 - <?php echo $layout_title ?></title>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="排課, 國小, 課表" />
+		<meta name="description" content="國小排課系統" />
+        <title>OST排課系統 - <?= $layout_title ?></title>
     </head>
 	<body>
 
@@ -11,7 +13,7 @@
 		</header>
 
     	<nav>
-         	<ul class="navigation">
+         	<ul id="user_nav">
                 <li><a href="">檢視班級課表</a></li>
                 <li><a href="">檢視教師課表</a></li>
                 <li><a href="">檢視教室課表</a></li>
@@ -19,8 +21,12 @@
     	</nav>
 
         <section>
-        	<?php echo $layout_content ?>
+        	<?= $layout_content ?>
         </section>
 
+        <footer>
+			OST小學排課系統
+			<a href="http://code.google.com/p/open-school-timetable/">專案網站</a>
+        </footer>
 	</body>
 </html>
