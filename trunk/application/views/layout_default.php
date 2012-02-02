@@ -7,9 +7,14 @@
         <title>OST排課系統 - <?= $layout_title ?></title>
     </head>
 	<body>
-
 		<header>
-			OST排課系統
+			<div id="banner">
+				<a href="<?= base_url() ?>">OST排課系統</a>
+			</div>
+
+			<div id="login">
+				<a href="login">登入</a>
+			</div>
 		</header>
 
     	<nav>
