@@ -19,9 +19,18 @@
 
     	<nav>
          	<ul id="user_nav">
-                <li><a href="">檢視班級課表</a></li>
-                <li><a href="">檢視教師課表</a></li>
-                <li><a href="">檢視教室課表</a></li>
+                <li><a href="">班級課表</a></li>
+                <li><a href="">教師課表</a></li>
+                <li><a href="">教室課表</a></li>
+            </ul>
+			<ul id="teacher_nav">
+                <li><a href="">個人排課需求設定</a></li>
+            </ul>
+			<ul id="admin_nav">
+                <li><a href="">教師排課限制設定</a></li>
+				<li><a href="">課程排課需求設定</a></li>
+				<li><a href="">課程排課限制設定</a></li>
+				<li><a href="">帳號密碼管理</a></li>
             </ul>
     	</nav>
 
