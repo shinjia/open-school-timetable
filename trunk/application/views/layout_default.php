@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="keywords" content="排課, 國小, 課表" />
 		<meta name="description" content="國小排課系統" />
+		<?= link_tag('jQuery.js'); ?>
         <title>OST排課系統 - <?= $layout_title ?></title>
     </head>
 	<body>
