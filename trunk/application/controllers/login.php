@@ -11,9 +11,10 @@ class Login extends CI_Controller
 	 **/
 	public function index()
 	{
-        $this->load->helper('ost_form');
+		$this -> load -> helper('ost_form');
 		$data['layout_title'] = '使用者登入';
-		$this->layout->view('login', $data);
+		$this -> layout -> view('login', $data);
 	}
+
 }
 ?>

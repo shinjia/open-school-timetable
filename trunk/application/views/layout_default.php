@@ -6,7 +6,12 @@
 		<meta name="description" content="國小排課系統" />
 		<?= link_tag('css/YUI CSS Rest.css') ?>
 		<?= link_tag('css/global.css') ?>
-        <title>OST排課系統 - <?= $layout_title ?></title>
+		<?php
+			foreach ($css as $cssfile) {
+				echo link_tag('css/' . $cssfile . '.css'); 
+			}
+		?>
+        <title>OST排課系統<?= $layout_title ?></title>
     </head>
 	<body>
 		<div id="wrapper">
@@ -32,7 +37,7 @@
 	                <li><a href="">教師排課限制設定</a></li>
 					<li><a href="">課程排課需求設定</a></li>
 					<li><a href="">課程排課限制設定</a></li>
-					<li><a href="">帳號密碼管理</a></li>
+					<li><a href="<?= base_url() . 'account'?>">帳號密碼管理</a></li>
 	            </ul>
 	    	</nav>
 	

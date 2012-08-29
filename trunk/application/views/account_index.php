@@ -1,0 +1,1 @@
+<h1><a href="<?= base_url('account/add')?>">新增使用者</a></h1>
