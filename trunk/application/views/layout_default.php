@@ -7,8 +7,10 @@
 		<?= link_tag('css/YUI CSS Rest.css') ?>
 		<?= link_tag('css/global.css') ?>
 		<?php
-			foreach ($css as $cssfile) {
-				echo link_tag('css/' . $cssfile . '.css'); 
+			if (isset($css)) {
+				foreach ($css as $cssfile) {
+					echo link_tag('css/' . $cssfile . '.css'); 
+				}
 			}
 		?>
         <title>OST排課系統<?= $layout_title ?></title>

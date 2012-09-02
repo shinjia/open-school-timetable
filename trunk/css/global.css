@@ -5,7 +5,23 @@ body {
 
 a {
 	text-decoration: none;
-	color: #FFF;
+	color: #FFFFFF;
+}
+
+.add_a {
+	background-color: #A2C139;
+	padding: 10px;
+}
+
+.delete_a {
+	background-color: #D80073;
+	padding: 10px;
+}
+
+#message_block {
+	color: #D80073;
+	padding: 10px 0px;
+	font-size: 120%;
 }
 
 #wrapper {

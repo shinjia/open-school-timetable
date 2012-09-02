@@ -11,11 +11,12 @@ class Account extends CI_Controller
 	 **/
 	public function index()
 	{
+		$data['css'] = array('account/index');
 		$data['layout_title'] = '帳號管理';
 
 		$this -> load -> helper('ost_form');
-		
-		$this -> layout -> view('account_index', $data);
+
+		$this -> layout -> view('account/index', $data);
 
 	}
 
@@ -26,10 +27,23 @@ class Account extends CI_Controller
 	{
 		$data['css'] = array('form');
 		$data['layout_title'] = '新增帳號';
-		
+
 		$this -> load -> helper('ost_form');
-		
-		$this -> layout -> view('account', $data);
+		$this -> load -> helper('forms_teacher');
+
+		if ($this -> input -> post()) {
+			$this -> load -> model('teacher');
+			if ($this -> teacher -> validate() == TRUE) {
+				$this -> teacher -> add();
+				message_save('新增完成');
+				redirect('account');
+			} else {
+				// 產生錯誤頁面
+				echo 'error';
+			}
+		} else {
+			$this -> layout -> view('account/add', $data);
+		}
 	}
 
 }
